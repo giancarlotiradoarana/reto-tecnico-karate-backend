@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/features\/reto_Karate_Intermedio[3.1:52]","start":1742933788143,"end":1742933791406,"title":"src\/test\/java\/features\/reto_Karate_Intermedio[3.1:52] 15:16:28.143-15:16:31.406 Crear múltiples usuarios y validar respuesta en la pagina reqres.in"},{"id":2,"group":1,"content":"src\/test\/java\/features\/reto_Karate_Intermedio[3.2:53]","start":1742933791417,"end":1742933792223,"title":"src\/test\/java\/features\/reto_Karate_Intermedio[3.2:53] 15:16:31.417-15:16:32.223 Crear múltiples usuarios y validar respuesta en la pagina reqres.in"},{"id":3,"group":1,"content":"src\/test\/java\/features\/reto_Karate_Intermedio[3.3:54]","start":1742933792234,"end":1742933793221,"title":"src\/test\/java\/features\/reto_Karate_Intermedio[3.3:54] 15:16:32.234-15:16:33.221 Crear múltiples usuarios y validar respuesta en la pagina reqres.in"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

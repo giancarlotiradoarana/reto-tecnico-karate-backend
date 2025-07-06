@@ -34,7 +34,7 @@ Descárgalo desde [https://maven.apache.org/](https://maven.apache.org/)
 Desde: [https://git-scm.com/](https://git-scm.com/)
 
 🔧 **IDE recomendado**  
-[IntelliJ IDEA](https://www.jetbrains.com/idea/) o [VS Code](https://code.visualstudio.com/) con la extensión “Karate”.
+Desde: [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/)
 
 ---
 Ya con esto es suficiente para poder clonar el proyecto.
@@ -133,7 +133,7 @@ Ejemplo:   mvn test -D'karate.options=classpath:features/usuarios/crear_usuario.
 
 ## 📊 Reporte de los casos de prueba:
 
-Luego de ejecutar las pruebas, se genera un reporte automático de resultados:se ejecuta el comando.
+Luego de ejecutar las pruebas, se genera un reporte automático de resultados en la siguente ruta en el proeyecto.
 
 ```bash  
 target/karate-reports/karate-summary.html

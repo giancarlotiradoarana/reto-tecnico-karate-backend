@@ -13,6 +13,7 @@ Feature: Listar usuarios
     And headers headers
     When method GET
     Then status 200
+    * print response
     * def schema = read('classpath:schemas/listar_usuarios.schema.json')
     * match response.quantidade == '#number'
     * match each response.usuarios == schema

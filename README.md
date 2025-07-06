@@ -115,21 +115,21 @@ Esto descargará automáticamente todas las dependencias necesarias (incluido Ka
 
 Desde la terminal, en la raíz del proyecto, puedes ejecutar:
 
+Hay dos maneras de ejecutar los casos: Por Scenario en específico o por .feature
+
+- Por Scenario en específico, solo al final de comando se agrega el @Tag que se desea probar.
+
+
 ```bash  
-mvn test
+mvn test -D'karate.options=--tags @AQUI AGREGAR EL TAG DEL CASO'
  ```
+Ejemplo:   mvn test -D'karate.options=--tags @esc001_listar_usuarios'
 
 También puedes correr un feature específico:
 ```bash  
-mvn test -Dkarate.options="classpath:features/usuarios/crear_usuario.feature"
+mvn test -D'karate.options=classpath:features/usuarios/AQUI_PONER_EL_NOMBRE_DEL_FEATURE.feature'
  ```
-
-O por tag:
-
-```bash  
-mvn test -Dkarate.options="--tags @positivo"
- ```
----
+Ejemplo:   mvn test -D'karate.options=classpath:features/usuarios/crear_usuario.feature'
 
 ## 📊 Reporte de los casos de prueba:
 

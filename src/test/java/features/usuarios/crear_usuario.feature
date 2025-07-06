@@ -10,7 +10,7 @@ Feature: Crear nuevo usuario en Serverest
 
   @esc001_crear_usuario @positivo @R1
   Scenario: Crear usuario con datos válidos y validar contrato de respuesta
-  # Se genera un correo aleatorio para evitar duplicados.
+  # Se genera un correo aleatorio para evitar duplicados, mediante los helpers
   # Esto es necesario porque si se reutiliza el mismo email en ejecuciones posteriores,
   # la API devolverá un error indicando que el email ya está registrado.
 

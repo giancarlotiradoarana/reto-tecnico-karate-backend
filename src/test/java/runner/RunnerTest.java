@@ -7,5 +7,5 @@ public class RunnerTest {
         /*BÁSICO*/
         //return (Karate) Karate.run("classpath:features/reto_karate.feature").tags("@ejercicio1_obtener_usuario_especifico_reqres");
         /*INTERMEDIO*/
-        return (Karate) Karate.run("classpath:features/reto_Karate_Intermedio.feature").tags("@ejercicio1_crear_validar_usuario_reqres");
+        return (Karate) Karate.run("classpath:features/reto_Karate_Intermedio.feature").tags("@prueba");
     }}

@@ -82,15 +82,27 @@ Esto descargará automáticamente todas las dependencias necesarias (incluido Ka
           │         ├── actualizar_usuario.feature    # Prueba para actualizar un usuario existente (PUT /usuarios/{id})
           │         └── eliminar_usuario.feature      # Prueba para eliminar un usuario existente (DELETE /usuarios/{id})
 
-          ├── 📁 data              # Carpeta que contiene datos de prueba externos en formato JSON
-          │     └── usuarios.json # Archivo con datos reutilizables (usuarios válidos, inválidos, duplicados, etc.)
+          ├── 📁 helpers              # Carpeta que contiene datos aleatorios
+          │     └── generar-datos.json # Archivo con datos reutilizables
+          
+          ├── 📁 request               # Carpeta que contiene los cuerpos (JSON) de las peticiones
+          │     └── actualizar_usuario201.json  # Request válido para actualización de usuario (HTTP 201)
+          │     └── actualizar_usuario400.json  # Request válido para actualización de usuario (HTTP 400)
+          │     └── crear_usuario201.json  # Request válido para creación de usuario (HTTP 201)
+          │     └── crear_usuario400.json  # Request válido para creación de usuario (HTTP 201)
+
+          ├── 📁 runner              # Carpeta que contiene datos aleatorios
+          │   └──📄 RunnerTest.java    # Clase en Java que lanza la ejecución de los tests Karate desde Maven o IDE
+
 
           ├── 📁 schemas              # Carpeta para almacenar esquemas JSON para validar estructuras de respuesta
-          │     └── usuario.schema.json # Schema usado para validar la estructura del JSON de usuario (ej: propiedades, tipos)
-
+          │     └── actualizar_usuario.schema.json # Schema usado para validar la estructura del JSON de actualizar_usuario 
+          │     └── buscar_usuario.schema.json # Schema usado para validar la estructura del JSON de buscar_usuario
+          │     └── crear_usuario.schema.json # Schema usado para validar la estructura del JSON de crear_usuario 
+          │     └── eliminar_usuario.schema.schema.json # Schema usado para validar la estructura del JSON de eliminar_usuario 
+          │     └── listar_usuario.schema.schema.json # Schema usado para validar la estructura del JSON de listar_usuario 
+          
           ├── 📄 karate-config.js   # Archivo de configuración global de Karate (URLs base, headers, etc.)
-
-          └── 📄 RunnerTest.java    # Clase en Java que lanza la ejecución de los tests Karate desde Maven o IDE
            
 📄 pom.xml                        # Archivo de configuración de Maven: define dependencias (Karate, plugins, JUnit, etc.)
 📄 README.md                      # Documentación principal del proyecto (setup, ejecución, estructura, etc.)

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.features.usuarios.actualizar_usuario</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2025-07-06 10:37:50 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Actualizar la información del usuario y validar contrato de respuesta</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/features/usuarios/actualizar_usuario.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Actualizar usuario existente</span>
+          <span class="feature-description">Como administrador del sistema,
+  Quiero Atualizar la información del usuario mediante la API
+  Para gestionar correctamente la base de datos de usuarios</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">positivo</a><a class="badge badge-primary" href="karate-tags.html">esc001_actualizar_usuario</a><a class="badge badge-primary" href="karate-tags.html">actualizar_usuario</a><a class="badge badge-primary" href="karate-tags.html">R1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Actualizar la información del usuario y validar contrato de respuesta</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1840</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url _baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">10:37:48.640 Entorno configurado con base URL: https://serverest.dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># * def usuario = call read(&#39;classpath:helpers/gerar-dados.js&#39;)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;classpath:request/actualizar_usuario200.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">80</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;usuarios&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1756</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">10:37:49.249 request:
+1 &gt; PUT https://serverest.dev/usuarios
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 97
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;nome&quot;:&quot;Fulano da Silva&quot;,&quot;email&quot;:&quot;beltrano@qa.com.br&quot;,&quot;password&quot;:&quot;teste&quot;,&quot;administrador&quot;:&quot;true&quot;}
+
+10:37:50.534 response time in milliseconds: 1274
+1 &lt; 405
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 6992811ad807f3e1e8e1e1c372f0133e;o=1
+1 &lt; date: Sun, 06 Jul 2025 15:37:52 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 146
+{
+    &quot;message&quot;: &quot;Não é possível realizar PUT em /usuarios. Acesse https://serverest.dev para ver as rotas disponíveis e como utilizá-las.&quot;
+}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">10:37:50.540 src/test/java/features/usuarios/actualizar_usuario.feature:18
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 1274, url: https://serverest.dev/usuarios, response: 
+{
+    &quot;message&quot;: &quot;Não é possível realizar PUT em /usuarios. Acesse https://serverest.dev para ver as rotas disponíveis e como utilizá-las.&quot;
+}
+src/test/java/features/usuarios/actualizar_usuario.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Registro alterado com sucesso&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Validación de contrato para el caso válido (Crear usuario)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def schema = read(&#39;classpath:schemas/actualizar_usuario.schema.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match response == schema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

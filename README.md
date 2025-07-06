@@ -17,7 +17,8 @@ Automatizar los siguientes flujos de negocio relacionados con la gestión de usu
 - Java 11 +
 - Maven
 - JSON Schema (para validación)
-- Git y GitHub Actions (opcional para CI)
+- Git 
+- GitHub
 ---
 
 ## ⚙️ Pasos Previos:

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/usuarios\/crear_usuario[1:12]","start":1752082519121,"end":1752082523448,"title":"features\/usuarios\/crear_usuario[1:12] 12:35:19.121-12:35:23.448 Crear usuario con datos válidos y validar contrato de respuesta"},{"id":2,"group":1,"content":"features\/usuarios\/crear_usuario[2.1:48]","start":1752082523538,"end":1752082524796,"title":"features\/usuarios\/crear_usuario[2.1:48] 12:35:23.538-12:35:24.796 Crear usuario con errores y validar el mensaje de error"},{"id":3,"group":1,"content":"features\/usuarios\/crear_usuario[2.2:49]","start":1752082524810,"end":1752082525341,"title":"features\/usuarios\/crear_usuario[2.2:49] 12:35:24.810-12:35:25.341 Crear usuario con errores y validar el mensaje de error"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/features\/usuarios\/actualizar_usuario[1.1:31]","start":1757861794762,"end":1757861796549,"title":"src\/test\/java\/features\/usuarios\/actualizar_usuario[1.1:31] 09:56:34.762-09:56:36.549 Actualizar la información del usuario y validar contrato de respuesta"},{"id":2,"group":1,"content":"src\/test\/java\/features\/usuarios\/actualizar_usuario[1.2:32]","start":1757861796574,"end":1757861797185,"title":"src\/test\/java\/features\/usuarios\/actualizar_usuario[1.2:32] 09:56:36.574-09:56:37.185 Actualizar la información del usuario y validar contrato de respuesta"},{"id":3,"group":1,"content":"src\/test\/java\/features\/usuarios\/actualizar_usuario[2.1:50]","start":1757861797196,"end":1757861797718,"title":"src\/test\/java\/features\/usuarios\/actualizar_usuario[2.1:50] 09:56:37.196-09:56:37.718 Actualizar la información del usuario con errores y validar el mensaje de error"},{"id":4,"group":1,"content":"src\/test\/java\/features\/usuarios\/actualizar_usuario[2.2:51]","start":1757861797728,"end":1757861798233,"title":"src\/test\/java\/features\/usuarios\/actualizar_usuario[2.2:51] 09:56:37.728-09:56:38.233 Actualizar la información del usuario con errores y validar el mensaje de error"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

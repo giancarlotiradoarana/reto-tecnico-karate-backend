@@ -9,7 +9,6 @@ function fn() {
   karate.configure('connectTimeout', config.timeout);
   karate.configure('readTimeout', config.timeout);
   karate.configure('ssl', true);
-
   karate.log('Entorno configurado con base URL:', config._baseUrl);
 
   return config;

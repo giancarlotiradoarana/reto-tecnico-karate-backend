@@ -14,7 +14,7 @@ Feature: Eliminar usuario
     #  rIRGjTqashdXHNjR
     #  uEb4sdsOUhTybGSh
 
-    Given path 'usuarios','uOteAA0bct1OVBL4'
+    Given path 'usuarios','G0QxXXCe9ZkZGCSu'
     And headers headers
     When method DELETE
     Then status 200

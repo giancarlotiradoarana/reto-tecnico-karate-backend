@@ -24,3 +24,4 @@ Feature: Buscar usuario por ID
     When method GET
     Then status 400
     And match response.message == 'Usuário não encontrado'
+

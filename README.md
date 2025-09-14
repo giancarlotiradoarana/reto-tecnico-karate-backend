@@ -160,16 +160,4 @@ El informe se encuentra en el proyecto, en la siguente Ruta:
 
 Para ver la estrategia de automatización y patrones utilizados, consulta el archivo: ==>  [STRATEGY.md](./STRATEGY.md)
 
----
-# DEMOSTRACIÓN DEL PROYECTO EN VIDEO
 
-En este video se muestra:
-- La ejecución de las pruebas automatizadas
-- La estructura del proyecto
-- Explicación de la estrategia y herramientas utilizadas
-
-Puedes ver la demostración del proyecto en el siguiente enlace:
-
-📹 [VER VIDEO EN GOOGLE DRIVE](https://drive.google.com/drive/folders/1wzM0drAp-5DE5Ksu2uTBYcvXTGDaaz95?usp=sharing)
-
----

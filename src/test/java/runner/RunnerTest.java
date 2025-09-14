@@ -7,5 +7,6 @@ public class RunnerTest {
     Karate runAll() {
         return Karate.run();
     }
+
 }
 

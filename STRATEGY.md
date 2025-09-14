@@ -70,7 +70,6 @@ Se usaron tags Gherkin para facilitar la ejecución segmentada:
 - Las pruebas se ejecutan con Maven: `mvn test`
 - También pueden ejecutarse por archivo o tag
 - Los reportes generados (`karate-summary.html`) permiten inspeccionar resultados con detalle
-
 ---
 
 ## 📌 Consideraciones finales

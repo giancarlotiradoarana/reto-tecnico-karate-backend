@@ -49,4 +49,3 @@ Feature: Actualizar usuario existente
       | id | nome             | password | campo    | mensajeError                      |
       | 1  |                  | hola1234 | nome     | nome não pode ficar em branco     |
       | 2  | Giancarlo Tirado |          | password | password não pode ficar em branco |
-

@@ -10,7 +10,7 @@ Feature: Buscar usuario por ID
 
   @esc001_buscar_usuario @positivo @R1
   Scenario: Buscar usuario por ID
-    Given path 'usuarios', 'bckYI6C7bhcstIH9'
+    Given path 'usuarios', 'tiZJJUyEchbV0MX7'
     And headers headers
     When method GET
     Then status 200
@@ -24,4 +24,3 @@ Feature: Buscar usuario por ID
     When method GET
     Then status 400
     And match response.message == 'Usuário não encontrado'
-

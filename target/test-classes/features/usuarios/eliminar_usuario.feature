@@ -13,8 +13,10 @@ Feature: Eliminar usuario
     #Se puede utilizar estos _id: para furutas pruedas del caso de DELETE, reemplazar en la linea 18 en el ID
     #  rIRGjTqashdXHNjR
     #  uEb4sdsOUhTybGSh
+    #  tiZJJUyEchbV0MX7
+    #  JonePARcm1Ge16Hv
 
-    Given path 'usuarios','G0QxXXCe9ZkZGCSu'
+    Given path 'usuarios','tiZJJUyEchbV0MX7'
     And headers headers
     When method DELETE
     Then status 200
@@ -34,6 +36,7 @@ Feature: Eliminar usuario
       | id               | mensajeError             |
       | qdJwagdra9nGVIeF | Nenhum registro excluído |
       | abcdefghijklmnop | Nenhum registro excluído |
+
 
 
 

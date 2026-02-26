@@ -17,4 +17,5 @@ Feature: Listar usuarios
     * def schema = read('classpath:schemas/listar_usuarios.schema.json')
     * match response.quantidade == '#number'
     * match each response.usuarios == schema
+    
 

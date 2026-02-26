@@ -78,3 +78,4 @@ Se usaron tags Gherkin para facilitar la ejecución segmentada:
 - El proyecto es fácilmente escalable y puede extenderse a otros endpoints como `/produtos`, `/login`, etc.
 - Se siguieron prácticas alineadas a un entorno real de trabajo en equipos de QA y automatización.
 
+

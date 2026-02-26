@@ -161,3 +161,4 @@ El informe se encuentra en el proyecto, en la siguente Ruta:
 Para ver la estrategia de automatización y patrones utilizados, consulta el archivo: ==>  [STRATEGY.md](./STRATEGY.md)
 
 
+
